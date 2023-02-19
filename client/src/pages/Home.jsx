@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Loader, Card, FormField } from "../components";
 
@@ -15,7 +15,7 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   const [allPosts, setAllPosts] = useState(null);
 
-  const [searchText, setSearchText] = useState(second);
+  const [searchText, setSearchText] = useState(" ");
 
   return (
     <section className="max-7xl mx-auto">
