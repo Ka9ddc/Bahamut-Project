@@ -4,8 +4,11 @@
   "description": "",
   "type": "module",
   "main": "index.js",
+  "homepage": "http://ka9ddc.github.io/Bahamut-Project",
   "scripts": {
-    "start": "nodemon index"
+    "start": "nodemon index",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +21,8 @@
     "mongoose": "^6.9.2",
     "nodemon": "^2.0.20",
     "openai": "^3.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
